@@ -3,7 +3,7 @@
 <p>Для запуска в терминале введите:</p>
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 > установятся необходимые библиотеки из файла requirements.txt
 
