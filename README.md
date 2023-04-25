@@ -5,5 +5,5 @@
 pip install -r requirements.txt
 ```
 > установятся необходимые библиотеки из файла requirements.txt
-
-далее запустить файл main.py
+</p>
+<p>далее запустить файл main.py</p>
