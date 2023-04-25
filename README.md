@@ -1,5 +1,5 @@
 # Тестовое задание ZM team
-<a>Проект выполнен на базе SQLite,Requests,Selenium,Multiprocessing.</a>
+<p>Проект выполнен на базе SQLite, Requests, Selenium, Multiprocessing. </p>
 <a href="https://docs.google.com/document/d/1n11Jvf4RJCwbA5eJkoOnFgZfeN3TwUSRG2suuDU1rn0/"> ТЗ от ZM Team </a>
 <p>Для запуска в терминале введите:</p>
 
