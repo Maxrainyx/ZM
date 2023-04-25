@@ -1,4 +1,5 @@
 # Тестовое задание ZM team
+<a>Проект выполнен на базе SQLite,Requests,Selenium,Multiprocessing.</a>
 <a href="https://docs.google.com/document/d/1n11Jvf4RJCwbA5eJkoOnFgZfeN3TwUSRG2suuDU1rn0/"> ТЗ от ZM Team </a>
 <p>Для запуска в терминале введите:</p>
 
@@ -12,4 +13,4 @@ pip3 install -r requirements.txt
 
 >В консоль для наглядности выводится строка запуска и окончания выполнения каждого процессса.
 
-<a>Задание выполнено написанием функций без использования ООП.</a>
+<a>Задание выполнено написанием функций без использования ООП</a>
