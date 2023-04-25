@@ -1,4 +1,4 @@
-# Тестовое задание ZM team
+# Тестовое задание ZM Team
 <p>Проект выполнен на базе SQLite, Requests, Selenium, Multiprocessin, написанием функций без использования ООП </p>
 <a href="https://docs.google.com/document/d/1n11Jvf4RJCwbA5eJkoOnFgZfeN3TwUSRG2suuDU1rn0/"> ТЗ от ZM Team </a>
 <h2>Для запуска в терминале введите:</h2>
