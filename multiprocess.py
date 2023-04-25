@@ -24,11 +24,10 @@ def process_profile(profile_id: int) -> None:
     _conn.close()
     # Создаем экземпляр драйвера Selenium и передаем ему Cookie
     options = webdriver.ChromeOptions()
-    options.add_argument(f"--user-data-dir=./user_data_{profile_id}")
-    options.add_argument('--disable-extensions')
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-extensions')  # без расширений
+    options.add_argument('--headless')  # запуск в фоне
+    options.add_argument('--disable-gpu')  # без рендера gpu
+    options.add_argument('--no-sandbox')  # без песочницы Chrome
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument(f'--cookie="{cookie}"')
     driver = webdriver.Chrome(options=options)
@@ -36,10 +35,9 @@ def process_profile(profile_id: int) -> None:
     driver.get(random_link)
 
     # Прокручиваем страницу с рандомной задержкой
-    scroll_amount = random.randint(1, 3)
-    for i in range(scroll_amount):
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(random.randint(1, 3))
+    time.sleep(random.randint(1, 3))
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(random.randint(1, 3))
 
     # Сохраняем Cookie в SQLite (обновляем значения профиля)
     new_cookie = driver.get_cookies()
@@ -60,7 +58,7 @@ def process_profile(profile_id: int) -> None:
 # Получаем список профилей из базы данных SQLite
 def profiles() -> list:
     """
-    - Собираем профиля из таблицы Cookie Profile(-> Cookies) (кол-во процессов)
+    - Собираем профиля из таблицы Cookie_Profile (кол-во процессов)
     """
     conn2 = sqlite3.connect(DB_NAME)
     c2 = conn2.cursor()
